@@ -344,6 +344,15 @@ int hessenberg (double **a, int n, double wr[], double wi[])
 return 1;
 }
 
+
+/* free matrix */
+void free_matrix(double **matrix,int nrh)
+{  int col_index;
+   for (col_index=0;col_index<=nrh;col_index++)
+     free(matrix[col_index]);
+   free(matrix);
+}
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -1216,6 +1225,10 @@ int main(){
 	cout << "Returns the Maximal Correlation Coefficient:: " << m_maxcorr << endl;
 	cout << endl << "Press any key to exit the program" << endl;
 
+	
+	free_matrix(pMatrix, toneCount);
+	delete [] pGray;
+	cvReleaseImage(&img);	
 	getch();
 	return 0;
 
