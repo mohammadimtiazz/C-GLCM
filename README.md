@@ -21,3 +21,12 @@ cv.lib
 cxcore.lib
 highgui.lib
 
+A sample image is also provided for illustrates the GLCM tutorial of this following link 
+http://www.fp.ucalgary.ca/mhallbey/tutorial.htm
+
+the samle image is also creted based on the example of the above link
+z.bmp image has 8-bit data of 
+0  0  1  1
+0  0  1  1  
+0  2  2  2
+2  2  3  3 
