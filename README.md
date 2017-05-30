@@ -32,3 +32,5 @@ z.bmp image has 8-bit data of
 2  2  3  3 
 
 "glcmCusingMask" presents coding for glcm using a mask. here mask will indicate those pixel which GLCM will avoid during calculation. Here the mask Image in a binary image. white pixel location of the mask image will be avoid during GLCM calculation of the input image. 
+
+'glcmMaskExcel' presents coding for saving glcm analysis in excel using both input image and image mask reading from a path location of input directory. 
